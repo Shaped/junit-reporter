@@ -1,0 +1,24 @@
+{
+	"name": "@shaped/json-reporter",
+	"version": "0.1.1-alpha",
+	"description": "junit reporter for nodejs",
+	"type": "module",
+	"author": {
+		"name": "forbiddenera",
+		"company": "Shaped",
+		"email": "jason@shaped.ca",
+		"url": "https://github.com/Shaped/junit-reporter/"
+	},
+	"main": "src/main.js",
+	"scripts": {
+		"test": "npm test"
+	},
+	"engines": {
+		"node": ">=19.8.1",
+		"npm": ">=9.5.1"
+	},
+	"devDependencies": {
+		"c8": "^7.13.0",
+		"tap": "^16.3.4"
+	}
+}
