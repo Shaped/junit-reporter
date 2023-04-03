@@ -47,7 +47,7 @@ export default class junitReporter extends Transform {
 													 delete event.data?.details?.name; }
 				}
 
-				if (event.data?.details && Object.keys(event.data.details).length === 0) delete event.data.details;
+				(event.data?.details && Object.keys(event.data.details).length === 0) ? delete event.data.details:null;
 
 				for (let x=this.suiteData.length-1;x >= 0;x--)
 					if (event.data.depth > this.suiteData[x].depth)
