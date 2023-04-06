@@ -1,7 +1,8 @@
 {
 	"name": "@shaped/junit-reporter",
-	"version": "0.1.1-alpha",
-	"description": "junit reporter for nodejs",
+	"version": "0.1.2-alpha",
+	"description": "junit reporter for nodejs built in test runner (node:test)",
+	"keywords":"node test runner junit xml convert export reporter",
 	"type": "module",
 	"license":"MIT",
 	"author": {
