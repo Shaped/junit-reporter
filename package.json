@@ -1,5 +1,5 @@
 {
-	"name": "@shaped/json-reporter",
+	"name": "@shaped/junit-reporter",
 	"version": "0.1.1-alpha",
 	"description": "junit reporter for nodejs",
 	"type": "module",
