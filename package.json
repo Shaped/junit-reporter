@@ -3,6 +3,7 @@
 	"version": "0.1.1-alpha",
 	"description": "junit reporter for nodejs",
 	"type": "module",
+	"license":"MIT",
 	"author": {
 		"name": "forbiddenera",
 		"company": "Shaped",
