@@ -1,6 +1,6 @@
 {
 	"name": "@shaped/junit-reporter",
-	"version": "0.1.2-alpha",
+	"version": "0.1.3-alpha",
 	"description": "junit reporter for nodejs built in test runner (node:test)",
 	"keywords":"node test runner junit xml convert export reporter",
 	"type": "module",
@@ -10,6 +10,10 @@
 		"company": "Shaped",
 		"email": "jason@shaped.ca",
 		"url": "https://github.com/Shaped/junit-reporter/"
+	},
+	"repository": {
+		"type":"git",
+		"url":"https://github.com/Shaped/junit-reporter.git"
 	},
 	"main": "src/main.js",
 	"scripts": {

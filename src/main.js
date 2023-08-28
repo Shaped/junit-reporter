@@ -38,9 +38,13 @@ export default class junitReporter extends Transform {
 					event.data.error				= JSON.parse(JSON.stringify(event.data.details.error));	// These values are not copyable: [stack], cause.[stack] cause.[message] cause.[name], [message]
 					event.data.error.stack			= event.data.details.error.stack;
 					event.data.error.message		= event.data.details.error.message.replaceAll("\n"," ").trim();
-					event.data.error.cause.stack 	= event.data.details.error.cause.stack;
-					event.data.error.cause.message 	= event.data.details.error.cause.message.replaceAll("\n"," ").trim();
-					event.data.error.cause.name 	= event.data.details.error.cause.name;
+
+					if (typeof event.data.error.cause !== "string") {
+						event.data.error.cause.stack 	= event.data.details.error.cause.stack;
+						event.data.error.cause.message 	= event.data.details.error.cause.message.replaceAll("\n"," ").trim();
+						event.data.error.cause.name 	= event.data.details.error.cause.name;
+					}
+
 					delete event.data.details.error;
 
 					if (event.data?.details?.name) { event.data.error.errorName = event.data?.details?.name;
